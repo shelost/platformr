@@ -907,6 +907,7 @@ const loop = ()=>{
 
                     if (enem.targetX){
                         
+                        ctx.lineWidth = 5
                         ctx.globalAlpha = 0.2
                         ctx.strokeStyle = 'white'
                         ctx.beginPath()
