@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 // Declare Variables
 var CENT_X, CENT_Y, GR_X, GR_Y, MX, MY, HX, HY, enemRange, limit, phase, ONE, caption
 var level = 1
-var scene = 3
+var scene = 1
 var seq = 1
 var mute = false
 var numClicks = 0
