@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PLATFORMR</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Hammersmith+One|Righteous|Varela&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <canvas id = "canvas" style = "position: fixed; top: 0px; left: 0px"></canvas>
-    
-</body>
+<canvas id = "bg" style = "position: fixed; top: 0px; left: 0px; z-index: 1"></canvas>
+<canvas id = "canvas" style = "position: fixed; top: 0px; left: 0px; z-index: 2"></canvas>
 
-<script src = "platformr.js"></script>
+
+</body>
+<script src = "platformrV2.js"></script>
+
+<style>
+
+body{
+
+    cursor: none;
+}
+
+</style>
+
 </html>
