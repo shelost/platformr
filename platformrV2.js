@@ -987,18 +987,6 @@ const loop = ()=>{
         MY = player.y
     }    
 
-    // Help Button
-    ctx.fillStyle = 'black'
-    helpButton.draw()
-    ctx.drawImage(help, helpButton.x, helpButton.y, helpButton.w, helpButton.h)
-
-    if (Touch(helpButton)){
-
-        scene = 4
-
-        endX = player.x
-        endY = player.y
-    }    
 
 
     
