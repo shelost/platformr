@@ -631,7 +631,6 @@ const loop = ()=>{
 
     if (con.up && !player.jumping){
 
-        player.yspeed -= 9*ONE
 
         if (level != 17){
             player.yspeed -= 9*ONE
