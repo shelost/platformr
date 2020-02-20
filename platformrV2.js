@@ -608,13 +608,22 @@ const loop = ()=>{
     // Player Movement
     if (con.right){
 
-        player.xspeed += 0.3*ONE
+        if (level != 17){
+            player.xspeed += 0.3*ONE
+        }else{
+            player.xspeed -= 0.3*ONE
+        }
+
         player.xadd =  player.w*0.65
         player.yadd = player.h*0.5
     }
     
     if (con.left){
-        player.xspeed -= 0.3*ONE
+        if (level != 17){
+            player.xspeed -= 0.3*ONE
+        }else{
+            player.xspeed += 0.3*ONE
+        }
 
         player.xadd =  player.w*0.35
         player.yadd = player.h*0.5
@@ -623,6 +632,13 @@ const loop = ()=>{
     if (con.up && !player.jumping){
 
         player.yspeed -= 9*ONE
+
+        if (level != 17){
+            player.yspeed -= 9*ONE
+        }else{
+            player.yspeed += 9*ONE
+        }
+
         player.jumping= true
     }
 
